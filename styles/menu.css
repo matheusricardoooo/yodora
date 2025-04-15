@@ -1,0 +1,93 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 85%;
+    margin-top: 32px;
+    margin-left: 100px;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+    padding-right: 500px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #2B2730;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.direita {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.direita a {
+    text-decoration: none;
+    color: #2B2730;
+    transition: 0.3s;
+}
+
+.direita a:hover {
+    text-decoration: underline;
+    transform: scale(1.2);
+}
+
+.direita button {
+    width: 112px;
+    height: 52px;
+    border-radius: 100px;
+    background-color: #2B2730;
+    color: #ffffff;
+    transition: 0.3s;
+}
+
+.direita button:hover {
+    background-color: #ffffff;
+    color: #2B2730;
+    transform: scale(1.2);
+}
+
+.direita img {
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+
+    header {
+        width: 328px;
+        height: 24px;
+        margin: 0;
+        margin-left: 16px;
+        margin-top: 24px;
+    }
+
+    .logo img {
+        width: 72px;
+        height: 24px;
+    }
+
+    nav {
+        display: none;
+    }
+
+    .direita a {
+        display: none;
+    }
+
+    .direita button {
+        display: none;
+    }
+
+    .direita img {
+        display: block;
+    }
+}
